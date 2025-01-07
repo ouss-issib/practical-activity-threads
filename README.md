@@ -1,41 +1,55 @@
 
-# Java Threading Exercises
+# Exercices de Programmation Multi-Threads en Java
 
-This repository contains solutions to practical exercises focused on multi-threading and parallel programming in Java. These exercises are part of the Java Object-Oriented Programming course led by Mr. Abdelmajid Bousselham.
+Ce dépôt contient des solutions aux exercices pratiques axés sur la programmation multi-threads et parallèle en Java. Ces exercices font partie du cours de Programmation Orientée Objet en Java dirigé par M. Abdelmajid Bousselham.
 
-## Exercises Overview
+## Aperçu des Exercices
 
-### Exercise 1: Multi-Threading with `Runnable`
+### Exercice 1 : Multi-Threading avec `Runnable`
 
-- **Objective**: Create a simple application demonstrating classic multi-threading behavior.
-- **Steps**:
-  1. Implement the `Talkative` class with an integer attribute.
-  2. Modify `Talkative` to implement the `Runnable` interface.
-  3. Override the `run` method to print the attribute's value 100 times.
-  4. In the `main` method, create 10 instances of `Thread`, each with a unique `Talkative` instance.
-  5. Start each thread and observe the output.
-- **Expected Outcome**: The application showcases concurrent execution with each thread printing its respective attribute value.
-- **Execution**:
+- **Objectif** : Créer une application simple pour démontrer un comportement classique de multi-threading.
+- **Étapes** :
+  1. Implémenter la classe `Talkative` avec un attribut entier.
+  2. Modifier `Talkative` pour implémenter l'interface `Runnable`.
+  3. Redéfinir la méthode `run` pour afficher 100 fois la valeur de l'attribut.
+  4. Dans la méthode `main`, créer 10 instances de `Thread`, chacune avec une instance unique de `Talkative`.
+  5. Démarrer chaque thread et observer la sortie.
+- **Résultat Attendu** : L'application montre une exécution concurrente avec chaque thread affichant sa valeur d'attribut respective.
+- **Execution**: <br><br>
     <img src="./captures/result__ex1.png"/>
     <img src="./captures/result_ex1.png"/>
 <h4>
-  En exécutant ce programme, je constate que les messages s'affichent de manière désordonnée. Chaque thread exécute sa propre méthode run, et c'est le système qui détermine l'ordre d'exécution. 
-
+ <hr>
+  6.Que constatez-vous ?
+  <br><br>
+   En exécutant ce programme, je constate que les messages s'affichent de manière désordonnée. Chaque thread exécute sa propre méthode run, et c'est le système qui détermine l'ordre d'exécution. 
 </h4>
-### Exercise 2: Parallel Sum Calculation Using Thread Pool
+ <hr>
+ <br>
+<br>
+### Exercice 2 : Calcul de la Somme en Parallèle avec un Pool de Threads
 
-- **Objective**: Use a thread pool to compute the sum of array elements in parallel.
-- **Steps**:
-  1. Implement the `Sommeur` class that calculates the sum over a range of indices in an array.
-  2. Provide a `getSomme` method to return the computed sum.
-  3. In the `main` class, divide the array into ranges, create a thread pool, and assign each range to a `Sommeur` instance.
-  4. Wait for all threads to finish and display the total sum.
-- **Expected Outcome**: The program demonstrates efficient parallel computation of the array sum using thread pools.
+- **Objectif** : Utiliser un pool de threads pour calculer la somme des éléments d'un tableau en parallèle.
+- **Étapes** :
+  1. Implémenter la classe `Sommeur` qui calcule la somme sur une plage d'indices dans un tableau.
+  2. Fournir une méthode `getSomme` pour retourner la somme calculée.
+  3. Dans la classe `main`, diviser le tableau en plages, créer un pool de threads, et attribuer chaque plage à une instance de `Sommeur`.
+  4. Attendre que tous les threads se terminent et afficher la somme totale.
+- **Résultat Attendu** : Le programme montre un calcul parallèle efficace de la somme du tableau à l'aide de pools de threads.
 
-## How to Run
+## Comment Exécuter
 
-1. Clone the repository:
+1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/yourusername/java-threading-exercises.git
+   git clone https://github.com/ouss-issib/practical-activity-threads.git
+
+2. Naviguer dans le répertoire du dépôt :
+   ```bash
+   cd java-threading-exercises
+
+3. Compiler et exécuter les fichiers Java :
+   ```bash
+   javac *.java
+   java Main
 
 
