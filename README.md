@@ -7,7 +7,7 @@ This repository contains solutions to practical exercises focused on multi-threa
 
 ### Exercise 1: Multi-Threading with `Runnable`
 
-- **Objective**: Create a simple application to demonstrate classic multi-threading behavior.
+- **Objective**: Create a simple application demonstrating classic multi-threading behavior.
 - **Steps**:
   1. Implement the `Talkative` class with an integer attribute.
   2. Modify `Talkative` to implement the `Runnable` interface.
@@ -15,7 +15,13 @@ This repository contains solutions to practical exercises focused on multi-threa
   4. In the `main` method, create 10 instances of `Thread`, each with a unique `Talkative` instance.
   5. Start each thread and observe the output.
 - **Expected Outcome**: The application showcases concurrent execution with each thread printing its respective attribute value.
+- **Execution**:
+    <img src="./captures/result__ex1.png"/>
+    <img src="./captures/result_ex1.png"/>
+<h4>
+  En exécutant ce programme, je constate que les messages s'affichent de manière désordonnée. Chaque thread exécute sa propre méthode run, et c'est le système qui détermine l'ordre d'exécution. 
 
+</h4>
 ### Exercise 2: Parallel Sum Calculation Using Thread Pool
 
 - **Objective**: Use a thread pool to compute the sum of array elements in parallel.
@@ -32,4 +38,4 @@ This repository contains solutions to practical exercises focused on multi-threa
    ```bash
    git clone https://github.com/yourusername/java-threading-exercises.git
 
-<img src="./captures/result__ex1.png"/>
+
