@@ -22,7 +22,7 @@ Ce dépôt contient des solutions aux exercices pratiques axés sur la programma
  <hr>
   6.Que constatez-vous ?
   <br><br>
-   En exécutant ce programme, je constate que les messages s'affichent de manière désordonnée. Chaque thread exécute sa propre méthode run, et c'est le système qui détermine l'ordre d'exécution. 
+   En exécutant ce programme, je constate que les messages s'affichent de manière désordonnée. Chaque thread exécute sa propre méthode run, et c'est le système qui détermine l'ordre d'exécution.  Cela provoque un affichage entrelacé des valeurs, car les threads s'exécutent en parallèle, et les sorties peuvent se mélanger en fonction de la gestion des ressources processeur.
 </h4>
  <hr>
  <br>
