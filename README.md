@@ -37,7 +37,7 @@ Ce dépôt contient des solutions aux exercices pratiques axés sur la programma
   4. Attendre que tous les threads se terminent et afficher la somme totale.
 - **Résultat Attendu** : Le programme montre un calcul parallèle efficace de la somme du tableau à l'aide de pools de threads.
 - **Execution**: <br><br>
-    <img src="./captures/result__ex2.png"/>
+    <img src="./captures/result_ex2.png"/>
    
 ## Comment Exécuter
 
