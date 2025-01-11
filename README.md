@@ -36,7 +36,9 @@ Ce dépôt contient des solutions aux exercices pratiques axés sur la programma
   3. Dans la classe `main`, diviser le tableau en plages, créer un pool de threads, et attribuer chaque plage à une instance de `Sommeur`.
   4. Attendre que tous les threads se terminent et afficher la somme totale.
 - **Résultat Attendu** : Le programme montre un calcul parallèle efficace de la somme du tableau à l'aide de pools de threads.
-
+- **Execution**: <br><br>
+    <img src="./captures/result__exé.png"/>
+   
 ## Comment Exécuter
 
 1. Cloner le dépôt :
